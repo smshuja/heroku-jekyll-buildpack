@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# bin/compile <build-dir> <cache-dir> <env-dir>
+
+export build_dir=$1
+export cache_dir=$2
+
+bundle exec jekyll build -s $build_dir/site -d $build_dir/site/_site
